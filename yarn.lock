@@ -2211,7 +2211,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.26":
+"@types/react@*", "@types/react@^16.9.27":
   version "16.9.27"
   resolved "https://registry.npmjs.org/@types/react/-/react-16.9.27.tgz#7fc5db99e3ec3f21735b44d3560cff684856814a"
   integrity sha512-j+RvQb9w7a2kZFBOgTh+s/elCwtqWUMN6RJNdmz0ntmwpeoMHKnyhUcmYBu7Yw94Rtj9938D+TJSn6WGcq2+OA==
@@ -9712,7 +9712,7 @@ react-dev-utils@^9.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-docgen-typescript-loader@^3.7.1:
+react-docgen-typescript-loader@^3.7.2:
   version "3.7.2"
   resolved "https://registry.npmjs.org/react-docgen-typescript-loader/-/react-docgen-typescript-loader-3.7.2.tgz#45cb2305652c0602767242a8700ad1ebd66bbbbd"
   integrity sha512-fNzUayyUGzSyoOl7E89VaPKJk9dpvdSgyXg81cUkwy0u+NBvkzQG3FC5WBIlXda0k/iaxS+PWi+OC+tUiGxzPA==
@@ -11552,7 +11552,7 @@ ts-pnp@^1.1.2:
   resolved "https://registry.npmjs.org/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-tsdx@^0.13.0:
+tsdx@^0.13.1:
   version "0.13.1"
   resolved "https://registry.npmjs.org/tsdx/-/tsdx-0.13.1.tgz#6fdfb7f70ecd22462d36c80f538d86f42d364b92"
   integrity sha512-BAp96F6eLZVIk5FETP8kSbkC8sqvDQa0pPMz4euZ8am2aFNzeXNX7DbOxfMxYiwzfyemfUsmyb4p5usVbqM4IQ==

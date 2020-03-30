@@ -5,7 +5,7 @@
 - Great for quick prototyping
 - TypeScript types included 👍
 
-## **[Storybook Demo]()**
+## **[Storybook Demo](https://www.react-wired-elements.netlify.com)**
 
 > The Storybook Demo includes interactive examples as well as detailed documentation for each component's props and usage.
 
@@ -59,32 +59,32 @@ const App = () => {
 };
 ```
 
-Checkout the [Storybook Demo]() for interactive examples and detailed prop definitions.
+Checkout the [Storybook Demo](https://www.react-wired-elements.netlify.com) for interactive examples and detailed prop definitions and usage instructions.
 
 Here is the full list of components. Click any component to be directed to it's Storybook example.
 
-- [WiredButton](http://localhost:6006/?path=/story/wiredbutton--default)
-- [WiredCalendar](http://localhost:6006/?path=/story/wiredcalendar--default)
-- [WiredCard](http://localhost:6006/?path=/story/wiredcard--default)
-- [WiredCheckbox](http://localhost:6006/?path=/story/wiredcheckbox--default)
-- [WiredCombo](http://localhost:6006/?path=/story/wiredcombo--default)
-- [WiredDialog](http://localhost:6006/?path=/story/wireddialog--default)
-- [WiredDivider](http://localhost:6006/?path=/story/wireddivider--default)
-- [WiredFab](http://localhost:6006/?path=/story/wiredfab--default)
-- [WiredIconButton](http://localhost:6006/?path=/story/wirediconbutton--default)
-- [WiredImage](http://localhost:6006/?path=/story/wiredimage--default)
-- [WiredInput](http://localhost:6006/?path=/story/wiredinput--default)
-- [WiredItem](http://localhost:6006/?path=/story/wireditem--default)
-- [WiredLink](http://localhost:6006/?path=/story/wiredlink--default)
-- [WiredListbox](http://localhost:6006/?path=/story/wiredlistbox--default)
-- [WiredProgress](http://localhost:6006/?path=/story/wiredprogress--default)
-- [WiredRadio](http://localhost:6006/?path=/story/wiredradio--default)
-- [WiredRadioGroup](http://localhost:6006/?path=/story/wiredradiogroup--default)
-- [WiredSearchInput](http://localhost:6006/?path=/story/wiredsearchinput--default)
-- [WiredSlider](http://localhost:6006/?path=/story/wiredslider--default)
-- [WiredSpinner](http://localhost:6006/?path=/story/wiredspinner--default)
-- [WiredTab](http://localhost:6006/?path=/story/wiredtab--default)
-- [WiredTabs](http://localhost:6006/?path=/story/wiredtabs--default)
-- [WiredTextarea](http://localhost:6006/?path=/story/wiredtextarea--default)
-- [WiredToggle](http://localhost:6006/?path=/story/wiredtoggle--default)
-- [WiredVideo](http://localhost:6006/?path=/story/wiredvideo--default)
+- [WiredButton](https://www.react-wired-elements.netlify.com/?path=/story/wiredbutton--default)
+- [WiredCalendar](https://www.react-wired-elements.netlify.com/?path=/story/wiredcalendar--default)
+- [WiredCard](https://www.react-wired-elements.netlify.com/?path=/story/wiredcard--default)
+- [WiredCheckbox](https://www.react-wired-elements.netlify.com/?path=/story/wiredcheckbox--default)
+- [WiredCombo](https://www.react-wired-elements.netlify.com/?path=/story/wiredcombo--default)
+- [WiredDialog](https://www.react-wired-elements.netlify.com/?path=/story/wireddialog--default)
+- [WiredDivider](https://www.react-wired-elements.netlify.com/?path=/story/wireddivider--default)
+- [WiredFab](https://www.react-wired-elements.netlify.com/?path=/story/wiredfab--default)
+- [WiredIconButton](https://www.react-wired-elements.netlify.com/?path=/story/wirediconbutton--default)
+- [WiredImage](https://www.react-wired-elements.netlify.com/?path=/story/wiredimage--default)
+- [WiredInput](https://www.react-wired-elements.netlify.com/?path=/story/wiredinput--default)
+- [WiredItem](https://www.react-wired-elements.netlify.com/?path=/story/wireditem--default)
+- [WiredLink](https://www.react-wired-elements.netlify.com/?path=/story/wiredlink--default)
+- [WiredListbox](https://www.react-wired-elements.netlify.com/?path=/story/wiredlistbox--default)
+- [WiredProgress](https://www.react-wired-elements.netlify.com/?path=/story/wiredprogress--default)
+- [WiredRadio](https://www.react-wired-elements.netlify.com/?path=/story/wiredradio--default)
+- [WiredRadioGroup](https://www.react-wired-elements.netlify.com/?path=/story/wiredradiogroup--default)
+- [WiredSearchInput](https://www.react-wired-elements.netlify.com/?path=/story/wiredsearchinput--default)
+- [WiredSlider](https://www.react-wired-elements.netlify.com/?path=/story/wiredslider--default)
+- [WiredSpinner](https://www.react-wired-elements.netlify.com/?path=/story/wiredspinner--default)
+- [WiredTab](https://www.react-wired-elements.netlify.com/?path=/story/wiredtab--default)
+- [WiredTabs](https://www.react-wired-elements.netlify.com/?path=/story/wiredtabs--default)
+- [WiredTextarea](https://www.react-wired-elements.netlify.com/?path=/story/wiredtextarea--default)
+- [WiredToggle](https://www.react-wired-elements.netlify.com/?path=/story/wiredtoggle--default)
+- [WiredVideo](https://www.react-wired-elements.netlify.com/?path=/story/wiredvideo--default)

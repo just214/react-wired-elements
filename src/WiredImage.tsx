@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Elevation, BaseProps } from './types';
+import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 const { useMemo } = React;
 
@@ -8,7 +8,7 @@ export interface WiredImageProps extends BaseProps {
    * Gives the button a sketchy height.
    * @default 1
    */
-  elevation?: Elevation;
+  elevation?: 1 | 2 | 3 | 4 | 5;
   /**
    * URL of the image.
    * @default 'http://placekitten.com/200/300'

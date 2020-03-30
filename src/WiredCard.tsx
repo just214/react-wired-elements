@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Elevation, BaseProps } from './types';
+import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 import { useMemo } from 'react';
 
@@ -12,7 +12,7 @@ export interface WiredCardProps extends BaseProps {
    * Gives the button a sketchy height.
    * @default 1
    */
-  elevation?: Elevation;
+  elevation?: 1 | 2 | 3 | 4 | 5;
   /**
    * Used internally to recompute the boundaries of the card when the children changes. This happens automatically.
    * @default

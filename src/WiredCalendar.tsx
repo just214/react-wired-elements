@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Elevation, BaseProps } from './types';
+import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 const { useMemo } = React;
 
@@ -8,7 +8,7 @@ export interface WiredCalendarProps extends BaseProps {
    * Gives the button a sketchy height.
    * @default 1
    */
-  elevation?: Elevation;
+  elevation?: 1 | 2 | 3 | 4 | 5;
   /**
    * Optional value that will be parsed as Date. Pre selects a date highlighted in the calendar.
    */
