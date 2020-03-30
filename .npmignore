@@ -1,0 +1,6 @@
+.storybook
+example
+node_modules
+stories
+test
+storybook-static
