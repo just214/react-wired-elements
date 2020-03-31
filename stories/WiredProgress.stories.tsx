@@ -1,6 +1,7 @@
 import React from 'react';
 import { WiredProgress } from '../src';
 import { boolean, color, number } from '@storybook/addon-knobs';
+import { Container } from './Container';
 
 const options = {
   range: true,
@@ -14,16 +15,18 @@ export default {
 };
 
 export const Default = () => (
-  <WiredProgress
-    value={number('value', 20, options)}
-    min={number('min', 1, options)}
-    max={number('max', 100, options)}
-    showPercentage={boolean('showPercentage', true)}
-    labelColor={color('labelColor', 'black')}
-    labelBgColor={color('labelBgColor', 'rgba(255,255,255,0.9)')}
-    progressBarColor={color('progressBarColor', 'rgba(0, 0, 200, 0.8)')}
-    fontSize={number('fontSize', 14)}
-  />
+  <Container>
+    <WiredProgress
+      value={number('value', 20, options)}
+      min={number('min', 1, options)}
+      max={number('max', 100, options)}
+      showPercentage={boolean('showPercentage', true)}
+      labelColor={color('labelColor', 'black')}
+      labelBgColor={color('labelBgColor', 'rgba(255,255,255,0.9)')}
+      progressBarColor={color('progressBarColor', 'rgba(0, 0, 200, 0.8)')}
+      fontSize={number('fontSize', 14)}
+    />
+  </Container>
 );
 
 export const AsLoading = () => {

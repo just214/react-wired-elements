@@ -2,6 +2,7 @@ import React from 'react';
 import { WiredCheckbox } from '../src';
 import { boolean, color } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
+import { Container } from './Container';
 
 export default {
   title: 'WiredCheckbox',
@@ -9,11 +10,13 @@ export default {
 
 export const Default = () => {
   return (
-    <WiredCheckbox
-      checked={true}
-      disabled={boolean('disabled', false)}
-      onChange={action('onChange Fired')}
-      color={color('color', 'currentColor')}
-    />
+    <Container>
+      <WiredCheckbox
+        checked={true}
+        disabled={boolean('disabled', false)}
+        onChange={action('onChange Fired')}
+        color={color('color', 'currentColor')}
+      />
+    </Container>
   );
 };

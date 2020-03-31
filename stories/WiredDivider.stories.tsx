@@ -1,13 +1,14 @@
 import React from 'react';
 import { WiredDivider } from '../src';
 import { select } from '@storybook/addon-knobs';
+import { Container } from './Container';
 
 export default {
   title: 'WiredDivider',
 };
 
 export const Default = () => (
-  <div>
+  <Container>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
       animi maxime enim.
@@ -17,5 +18,5 @@ export const Default = () => (
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
       voluptatibus ullam neque.
     </p>
-  </div>
+  </Container>
 );

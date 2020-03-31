@@ -3,6 +3,7 @@ module.exports = {
   addons: [
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    // '@storybook/addon-docs',
     '@storybook/addon-knobs',
     '@storybook/addon-viewport',
   ],
@@ -18,6 +19,15 @@ module.exports = {
         },
         {
           loader: require.resolve('react-docgen-typescript-loader'),
+        },
+      ],
+    });
+
+    config.module.rules.push({
+      test: /\.md$/,
+      use: [
+        {
+          loader: 'markdown-loader',
         },
       ],
     });

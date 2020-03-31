@@ -1,6 +1,7 @@
 import React from 'react';
 import { WiredDialog, WiredButton } from '../src';
 import { text, select, number } from '@storybook/addon-knobs';
+import { Container } from './Container';
 
 export default {
   title: 'WiredDialog',
@@ -12,7 +13,7 @@ export const Default = () => {
     setOpen(o => !o);
   }
   return (
-    <div>
+    <Container>
       <WiredButton elevation={2} onClick={toggleOpen}>
         Show Dialog
       </WiredButton>
@@ -29,6 +30,6 @@ export const Default = () => {
           </div>
         </div>
       </WiredDialog>
-    </div>
+    </Container>
   );
 };
