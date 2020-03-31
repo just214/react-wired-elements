@@ -17,7 +17,7 @@ export const README = () => (
       fontFamily: 'sans-serif',
       fontSize: '1.1rem',
       lineHeight: 1.5,
-      maxWidth: '800px',
+      maxWidth: '960px',
       margin: '0 auto',
       padding: '1rem',
     }}

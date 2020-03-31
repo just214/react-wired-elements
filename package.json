@@ -1,8 +1,9 @@
 {
   "name": "react-wired-elements",
   "description": "Wired Elements as React components. TypeScript types included.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
+  "author": "gojutin <gojutin@gmail.com>",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -21,7 +22,6 @@
     "sketch",
     "handwritten"
   ],
-  "author": "gojutin <gojutin@gmail.com>",
   "module": "dist/react-wired-elements.esm.js",
   "repository": {
     "type": "git",
