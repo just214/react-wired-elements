@@ -11,7 +11,8 @@ export default {
 export const Default = () => (
   <Container>
     <WiredSearchInput
-      placeholder={text('placeholder', 'Email Address')}
+      value=""
+      placeholder={text('placeholder', 'Search')}
       disabled={boolean('disabled', false)}
       onChange={action('onChange Fired')}
       onBlur={action('onBlur Fired')}

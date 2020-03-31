@@ -2,6 +2,8 @@
 
 [Wired Elements](https://wiredjs.com/) as React components.
 
+<img style="width: 80%;" src="https://res.cloudinary.com/gojutin/image/upload/v1585680913/react-wired-elements/react-wired-elements-image.png" />
+
 - Great for quick prototyping
 - TypeScript types included 👍
 
