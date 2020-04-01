@@ -14,3 +14,4 @@
 - Fixed various bugs.
 - Fixed casing on components to match TitleCase format.
 - Added unit tests for each component.
+- Fixed issue with `zeroKnobColor` prop on `WiredSlider`

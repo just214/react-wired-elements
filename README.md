@@ -21,7 +21,7 @@
 yarn add react-wired-elements
 ```
 
-**Step 2.** Include the Material Icons packages in the head of your main HTML file.
+**Step 2.** Include the Material Icons CSS file in the head of your main HTML file.
 
 ```html
 <head>
@@ -40,7 +40,7 @@ import { WiredCard, WiredButton } from 'react-wired-elements';
 
 const App = () => {
   return (
-    <WiredCard fill="dodgerblue" elevation={3}>
+    <WiredCard fill="#F5F5F5" elevation={3}>
       <WiredButton onClick={handleSubmit}>Submit</WiredButton>
     </WiredCard>
   );
@@ -83,4 +83,3 @@ There are some naming and functionality differences between Wired Elements and t
 
 - `maxRows` prop on `WiredTextArea` component not working
 - `firstDate` and `lastDate` not working on `WiredCalendar`
-- `knobRadius` not working on `WiredSlider`
