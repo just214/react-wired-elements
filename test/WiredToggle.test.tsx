@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredToggle } from '../src';
+import { WiredToggle } from '../src/WiredToggle';
 
 describe('WiredToggle', () => {
   it('renders without crashing', () => {

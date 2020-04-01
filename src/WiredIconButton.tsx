@@ -62,9 +62,12 @@ export const WiredIconButton = ({
     <wired-icon-button ref={register}>
       <div style={{ height: '24px', width: '24px' }}>
         {children || (
-          <mwc-icon style={{ fontSize: iconSize, color: iconColor }}>
+          <span
+            className="material-icons"
+            style={{ fontSize: iconSize, color: iconColor }}
+          >
             {icon}
-          </mwc-icon>
+          </span>
         )}
       </div>
     </wired-icon-button>

@@ -12,7 +12,6 @@ export interface BaseProps {
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'mwc-icon': any;
       'wired-button': any;
       'wired-calendar': any;
       'wired-card': any;

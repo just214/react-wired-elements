@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredFab } from '../src';
+import { WiredFab } from '../src/WiredFab';
 
 describe('WiredFab', () => {
   it('renders without crashing', () => {

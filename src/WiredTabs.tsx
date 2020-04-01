@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BaseProps } from './types';
 import { WiredItem } from './WiredItem';
+import { Show } from './utils/Show';
 
 const { useState, useRef } = React;
 
@@ -41,39 +42,43 @@ export const WiredTabs = ({
   return (
     <div>
       <div ref={tabsRef}>
-        {(children as any[]).map(child => {
-          return (
-            <WiredItem
-              selectedColor={selectedColor}
-              selectedBgColor={selectedBgColor}
-              onClick={() => handleSelected(child.props.name)}
-              selected={selectedValue === child.props.name}
-              key={child.props.name}
-              value={child.props.name}
-            >
-              {child.props.name}
-            </WiredItem>
-          );
-        })}
+        <Show when={Array.isArray(children) && !!children.length}>
+          {(children as any[]).map(child => {
+            return (
+              <WiredItem
+                selectedColor={selectedColor}
+                selectedBgColor={selectedBgColor}
+                onClick={() => handleSelected(child.props.name)}
+                selected={selectedValue === child.props.name}
+                key={child.props.name}
+                value={child.props.name}
+              >
+                {child.props.name}
+              </WiredItem>
+            );
+          })}
+        </Show>
       </div>
       <div>
-        {(children as any[]).map((Child: any) => {
-          if (Child.props.name === selectedValue) {
-            return (
-              <div
-                key={Child}
-                style={{
-                  width: tabsRef?.current
-                    ? tabsRef?.current.clientWidth
-                    : 'auto',
-                }}
-              >
-                {Child}
-              </div>
-            );
-          }
-          return null;
-        })}
+        <Show when={Array.isArray(children) && !!children.length}>
+          {(children as any[]).map((Child: any) => {
+            if (Child.props.name === selectedValue) {
+              return (
+                <div
+                  key={Child}
+                  style={{
+                    width: tabsRef?.current
+                      ? tabsRef?.current.clientWidth
+                      : 'auto',
+                  }}
+                >
+                  {Child}
+                </div>
+              );
+            }
+            return null;
+          })}
+        </Show>
       </div>
     </div>
   );

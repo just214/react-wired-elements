@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredSearchInput } from '../src';
+import { WiredSearchInput } from '../src/WiredSearchInput';
 
 describe('WiredSearchInput', () => {
   it('renders without crashing', () => {

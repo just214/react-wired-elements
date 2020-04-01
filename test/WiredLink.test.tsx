@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredLink } from '../src';
+import { WiredLink } from '../src/WiredLink';
 
 describe('WiredLink', () => {
   it('renders without crashing', () => {

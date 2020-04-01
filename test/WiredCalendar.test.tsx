@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredCalendar } from '../src';
+import { WiredCalendar } from '../src/WiredCalendar';
 
 describe('WiredCalendar', () => {
   it('renders without crashing', () => {

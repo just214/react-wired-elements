@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredProgress } from '../src';
+import { WiredProgress } from '../src/WiredProgress';
 
 describe('WiredProgress', () => {
   it('renders without crashing', () => {

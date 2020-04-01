@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredSpinner } from '../src';
+import { WiredSpinner } from '../src/WiredSpinner';
 
 describe('WiredSpinner', () => {
   it('renders without crashing', () => {

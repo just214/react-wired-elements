@@ -1255,71 +1255,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@material/animation@6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/animation/-/animation-6.0.0-canary.35a32aaea.0.tgz#a709f7de7f4255fdd97ef69a0fa35b6214152b6c"
-  integrity sha512-UNdA/ndQYssWv6jOqAHXL4QaeI3OfC3j/bGikFsJ17nrSoo10G3d8wQSebw+ZS2wqsXp6jOu0iMDId6acZoO5w==
-  dependencies:
-    tslib "^1.9.3"
-
-"@material/base@6.0.0-canary.35a32aaea.0", "@material/base@=6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/base/-/base-6.0.0-canary.35a32aaea.0.tgz#d80d83d881c3d0eb9ab7fdb4d782cfe4f8b1bdd8"
-  integrity sha512-QE3rF3KP9HJet8Jpok9eFWK1F2n3JJKhP0qyjR+n1llgcoBtEIGShA8+wkixeCUS8rVgpWRNyppuqg8lft/WeQ==
-  dependencies:
-    tslib "^1.9.3"
-
-"@material/dom@6.0.0-canary.35a32aaea.0", "@material/dom@=6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/dom/-/dom-6.0.0-canary.35a32aaea.0.tgz#f22a36c62a960aed5289319d37b91d27db1e29c2"
-  integrity sha512-QoOQhYwZZ0F+tE7Mci92p8zY4iDsDZxIHZgO191o0zEdGROM6vTB3VupUwBn+5IdSKzblvxNsO6BblfMNmYpsw==
-  dependencies:
-    tslib "^1.9.3"
-
-"@material/feature-targeting@6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/feature-targeting/-/feature-targeting-6.0.0-canary.35a32aaea.0.tgz#befa2d78705a08b92bc85695128e81fb3504bbbb"
-  integrity sha512-qJbELPsZZ7D+SlRpz7LCpc3SKzsbE8a11PB8/RlpKqTk2h5+n+efy2J7Et2V2hJxwtR91D4JSN31tmNtxchMGA==
-
-"@material/mwc-base@^0.14.1":
-  version "0.14.1"
-  resolved "https://registry.npmjs.org/@material/mwc-base/-/mwc-base-0.14.1.tgz#7e1923919b5b672902af2e562426abff3fb73f1a"
-  integrity sha512-9EHP5Q2tQntiu6K92mn5G5gakmcuituHmz0NPvzAW34RnrMV81UevwfLLZwUiy51pm52hd5/viLXVt/WlL6bDg==
-  dependencies:
-    "@material/base" "=6.0.0-canary.35a32aaea.0"
-    "@material/dom" "=6.0.0-canary.35a32aaea.0"
-    "@material/ripple" "=6.0.0-canary.35a32aaea.0"
-    lit-element "^2.3.0"
-    tslib "^1.10.0"
-
-"@material/mwc-icon@^0.14.1":
-  version "0.14.1"
-  resolved "https://registry.npmjs.org/@material/mwc-icon/-/mwc-icon-0.14.1.tgz#7ca8dbf7a60b559ddf6f72056078c612fe34e3da"
-  integrity sha512-vjhmww/v2M4YVuPq5NhzoxyMBuJi1+CEKnfgdptqP2VT3oxjZKggQYqm/TlTTzHcRxOxhqmbcgfji7qosnzgfw==
-  dependencies:
-    "@material/mwc-base" "^0.14.1"
-    lit-element "^2.3.0"
-    tslib "^1.10.0"
-
-"@material/ripple@=6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/ripple/-/ripple-6.0.0-canary.35a32aaea.0.tgz#1edb4501d49c21d0610907cc89278019615723e8"
-  integrity sha512-0ZogedoMGKgBZQ8pbHNb6gudWu6KjIRRP8kEJYT8h4EIUUVC6NypHwJVBz7l+UzHPaXVUWdSQnQclHmtP7LuYg==
-  dependencies:
-    "@material/animation" "6.0.0-canary.35a32aaea.0"
-    "@material/base" "6.0.0-canary.35a32aaea.0"
-    "@material/dom" "6.0.0-canary.35a32aaea.0"
-    "@material/feature-targeting" "6.0.0-canary.35a32aaea.0"
-    "@material/theme" "6.0.0-canary.35a32aaea.0"
-    tslib "^1.9.3"
-
-"@material/theme@6.0.0-canary.35a32aaea.0":
-  version "6.0.0-canary.35a32aaea.0"
-  resolved "https://registry.npmjs.org/@material/theme/-/theme-6.0.0-canary.35a32aaea.0.tgz#242cc02cccd0b227eea1c73761053ed40e5e173e"
-  integrity sha512-DXz4aBBWiI4F9R/LA2/SlP/faX7gQboPE4zMqHUFRX8pRotMRUwPUFMPDsNI4wUcHRTvL5TtN1CRT/BvEXFoTQ==
-  dependencies:
-    "@material/feature-targeting" "6.0.0-canary.35a32aaea.0"
-
 "@mdx-js/loader@^1.5.1":
   version "1.5.8"
   resolved "https://registry.npmjs.org/@mdx-js/loader/-/loader-1.5.8.tgz#3d1c4031b934c03309cabbbfe01628f3960e3221"
@@ -7820,7 +7755,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lit-element@^2.2.1, lit-element@^2.3.0:
+lit-element@^2.2.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
   integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==

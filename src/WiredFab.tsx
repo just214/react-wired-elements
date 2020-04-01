@@ -55,7 +55,11 @@ export const WiredFab = ({
   return (
     <wired-fab ref={register}>
       <span>
-        {children || <mwc-icon style={{ color: iconColor }}>{icon}</mwc-icon>}
+        {children || (
+          <span className="material-icons" style={{ color: iconColor }}>
+            {icon}
+          </span>
+        )}
       </span>
     </wired-fab>
   );

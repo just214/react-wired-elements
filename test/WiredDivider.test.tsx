@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredDivider } from '../src';
+import { WiredDivider } from '../src/WiredDivider';
 
 describe('WiredDivider', () => {
   it('renders without crashing', () => {

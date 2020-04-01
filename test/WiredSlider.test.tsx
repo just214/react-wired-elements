@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredSlider } from '../src';
+import { WiredSlider } from '../src/WiredSlider';
 
 describe('WiredSlider', () => {
   it('renders without crashing', () => {

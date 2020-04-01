@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredVideo } from '../src';
+import { WiredVideo } from '../src/WiredVideo';
 
 describe('WiredVideo', () => {
   it('renders without crashing', () => {

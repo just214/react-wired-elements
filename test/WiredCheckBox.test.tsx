@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredCheckBox } from '../src';
+import { WiredCheckBox } from '../src/WiredCheckBox';
 
 describe('WiredCheckBox', () => {
   it('renders without crashing', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredCombo } from '../src';
+import { WiredCombo } from '../src/WiredCombo';
 
 describe('WiredCombo', () => {
   it('renders without crashing', () => {

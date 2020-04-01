@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredDialog } from '../src';
+import { WiredDialog } from '../src/WiredDialog';
 
 describe('WiredDialog', () => {
   it('renders without crashing', () => {

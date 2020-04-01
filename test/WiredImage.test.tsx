@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredImage } from '../src';
+import { WiredImage } from '../src/WiredImage';
 
 describe('WiredImage', () => {
   it('renders without crashing', () => {

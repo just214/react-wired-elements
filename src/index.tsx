@@ -1,4 +1,3 @@
-import '@material/mwc-icon';
 import 'wired-button';
 import 'wired-calendar';
 import 'wired-card';

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredTab } from '../src';
+import { WiredTab } from '../src/WiredTab';
 
 describe('WiredTab', () => {
   it('renders without crashing', () => {

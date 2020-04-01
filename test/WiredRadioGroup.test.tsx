@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredRadioGroup } from '../src';
+import { WiredRadioGroup } from '../src/WiredRadioGroup';
 
 describe('WiredRadioGroup', () => {
   it('renders without crashing', () => {

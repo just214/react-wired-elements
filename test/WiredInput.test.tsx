@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredInput } from '../src';
+import { WiredInput } from '../src/WiredInput';
 
 describe('WiredInput', () => {
   it('renders without crashing', () => {

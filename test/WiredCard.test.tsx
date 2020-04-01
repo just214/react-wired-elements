@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredCard } from '../src';
+import { WiredCard } from '../src/WiredCard';
 
 describe('WiredCard', () => {
   it('renders without crashing', () => {

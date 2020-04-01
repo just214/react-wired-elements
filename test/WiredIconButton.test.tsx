@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredIconButton } from '../src';
+import { WiredIconButton } from '../src/WiredIconButton';
 
 describe('WiredIconButton', () => {
   it('renders without crashing', () => {

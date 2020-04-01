@@ -21,13 +21,20 @@ export const Default = () => {
         selectedColor={color('selectedColor', 'white')}
       >
         <WiredTab name="One" label="One">
-          Item 1
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos at
+          voluptatum consectetur sunt quia. Esse ab sit quod pariatur
+          repudiandae?
         </WiredTab>
         <WiredTab name="Two" label="Two">
-          Item 2
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum
+          numquam error repudiandae fugiat, sint tempora incidunt ipsa suscipit?
+          Ipsam dolor facilis magnam blanditiis. Beatae tempore aperiam ad porro
+          placeat, excepturi deleniti. Iure eius dolorum blanditiis saepe illo
+          voluptates ipsum.
         </WiredTab>
         <WiredTab name="Three" label="Three">
-          Item 3
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi
+          sunt itaque, obcaecati nobis dolorum?
         </WiredTab>
       </WiredTabs>
     </Container>
