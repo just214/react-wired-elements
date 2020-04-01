@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
-const { useMemo } = React;
 import { InputType } from './utils/inputTypes';
+const { useMemo } = React;
 
 export interface WiredInputProps extends BaseProps {
   /**
@@ -52,7 +52,7 @@ export const WiredInput = ({
       attributes: { placeholder, disabled, type, value },
       methods: { keyup: onChange, blur: onBlur, focus: onFocus },
     };
-  }, [placeholder, disabled, type, value, onChange, onBlur]);
+  }, [placeholder, disabled, type, value, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
   return <wired-input ref={register}></wired-input>;

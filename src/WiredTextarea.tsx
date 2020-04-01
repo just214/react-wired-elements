@@ -57,7 +57,7 @@ export const WiredTextarea = ({
       attributes: { placeholder, disabled, value, rows, maxrows: maxRows },
       methods: { keyup: onChange, blur: onBlur, focus: onFocus },
     };
-  }, [placeholder, disabled, value, rows, maxRows, onChange, onBlur]);
+  }, [placeholder, disabled, value, rows, maxRows, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
   return <wired-textarea ref={register}></wired-textarea>;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
-const { useMemo } = React;
 import { Icon } from './utils/icons';
+const { useMemo } = React;
 
 export interface WiredIconButtonProps extends BaseProps {
   /**
@@ -55,7 +55,7 @@ export const WiredIconButton = ({
       methods: { click: onClick },
       css: { color: lineColor, '--mdc-icon-size': iconSize },
     };
-  }, [disabled, lineColor, iconColor, iconSize]);
+  }, [disabled, lineColor, iconSize, onClick]);
 
   const register = useCustomElement(customValues);
   return (

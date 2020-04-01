@@ -7820,7 +7820,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lit-element@^2.3.0:
+lit-element@^2.2.1, lit-element@^2.3.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/lit-element/-/lit-element-2.3.1.tgz#73343b978fa1e73d60526c6bb6ad60f53a16c343"
   integrity sha512-tOcUAmeO3BzwiQ7FGWdsshNvC0HVHcTFYw/TLIImmKwXYoV0E7zCBASa8IJ7DiP4cen/Yoj454gS0qqTnIGsFA==
@@ -10534,6 +10534,13 @@ rollup@^1.32.1:
     "@types/node" "*"
     acorn "^7.1.0"
 
+roughjs@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/roughjs/-/roughjs-3.1.0.tgz#d011b9239fd1790e487bbfa204c98f1c786966ac"
+  integrity sha512-WJIKyWxBlEIuMeK0foUZD1KVYzT6Dn62ksawZrlu3BzxUxgtPdnlCMDgX/C3N5gxj/AMRazstKOFm70tqTo5Bw==
+  dependencies:
+    workly "^1.2.0"
+
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.npmjs.org/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
@@ -12478,6 +12485,252 @@ window-size@0.1.0:
   resolved "https://registry.npmjs.org/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
   integrity sha1-VDjNLqk7IC76Ohn+iIeu58lPnJ0=
 
+wired-button@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-button/-/wired-button-2.0.2.tgz#e3a78979667d2e45a9ee41934e114bca249fb338"
+  integrity sha512-pEe/iQ2lc/E3+ix1O2b6GS59otBe84Akpy9dcmYk7JdbaOMAgvnof0VTmVuyAMnRqhXUyZyVIJZ8IwKOTfg+uQ==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-calendar@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-calendar/-/wired-calendar-2.0.2.tgz#04bd68be26f7f5d6bb2c915abce454a052386e6b"
+  integrity sha512-jKdl8nFSCPZyBeQPlpJr4WOHMry/3q0RgU8GqwWwj8aWARDGvj7EIXjbCHrtG9owsKSqSnjleup3kPrhGsw4tA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-card@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-card/-/wired-card-2.0.2.tgz#404749fb5ecfc5405a0d15b689f78d909e5ec12e"
+  integrity sha512-miGE+hCqq8TKIXliyosBSHKVc/whBXdmFP6jztqTflcXVh1nNyYX8bDEXbscXbn6LVmeyHpoc59Nz7RASoeAmw==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-checkbox@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-checkbox/-/wired-checkbox-2.0.2.tgz#9f3f6eb49969e673a3049126922f364b845c7dd2"
+  integrity sha512-8RU2gNGUNaJnTze3l4NPoslHkUB7G8b0uV702AZvbgWuT2AdcSecfv3m/PJVflAyY8FWuwIArBqgOqh48IRbnw==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-combo@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-combo/-/wired-combo-2.0.2.tgz#7ed4566d5a63652e93b6f50ddc059c6b612f8a7b"
+  integrity sha512-SpOiXG+FeYI/N2s4x7kRcscUNvRwrbuozTbMwLKv53+ifYFnAlpSCF0fjvhK2eDkChkRg/FajdveSMf60uakmA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-card "^2.0.2"
+    wired-lib "^2.0.0"
+
+wired-dialog@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-dialog/-/wired-dialog-2.0.2.tgz#46db7cf521a3f049610a3720f79e6a49e9905683"
+  integrity sha512-c3EO4xkt/7hAe7xNxEYRj+6tU2X68RZ+cxigQy/ckOr4bE8h00BYpcRFJeGnC43xXzutyYIwaUP9tfQPSu0gxQ==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-card "^2.0.2"
+
+wired-divider@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-divider/-/wired-divider-2.0.2.tgz#5f92b794f854ca90151ca0f7659ad8b9e843959a"
+  integrity sha512-l6PnAFzyzC/P/peLAaP476mSbdC3vvECOkg/Joh0HIdcAovDWwGr07s1f1ocAIolGu939cWsrlyF1i79gMKZ7g==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-elements@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/wired-elements/-/wired-elements-2.0.5.tgz#15b225ff531c609a6114d02103fc7f519cb74706"
+  integrity sha512-O00+aioUwjx577BChT9nI8B+7nmAr6kA0TLtPNPVXGfSdK5nJZS91NFzbzIU4ilgdJHz4LDtcyPnEfwbQ5pDPg==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-button "^2.0.2"
+    wired-calendar "^2.0.2"
+    wired-card "^2.0.2"
+    wired-checkbox "^2.0.2"
+    wired-combo "^2.0.2"
+    wired-dialog "^2.0.2"
+    wired-divider "^2.0.2"
+    wired-fab "^2.0.2"
+    wired-icon-button "^2.0.2"
+    wired-image "^2.0.2"
+    wired-input "^2.0.2"
+    wired-item "^2.0.2"
+    wired-lib "^2.0.0"
+    wired-link "^2.0.2"
+    wired-listbox "^2.0.2"
+    wired-progress "^2.0.2"
+    wired-radio "^2.0.2"
+    wired-radio-group "^2.0.2"
+    wired-search-input "^2.0.2"
+    wired-slider "^2.0.2"
+    wired-spinner "^2.0.2"
+    wired-tab "^2.0.2"
+    wired-tabs "^2.0.2"
+    wired-textarea "^2.0.2"
+    wired-toggle "^2.0.2"
+    wired-video "^2.0.2"
+
+wired-fab@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-fab/-/wired-fab-2.0.2.tgz#33f5a1ae7ce07292c960fcdce151964c861a5773"
+  integrity sha512-TrHYpn4G74ABWzA5F33iI7Q/OV9czALDajIbnKDQZIxyS+XUl4zJcakz8cb9kGnFIk3/fk8G6D0Cqn5rrJF+DA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-icon-button@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-icon-button/-/wired-icon-button-2.0.2.tgz#f8a013cc1030fdf8c18c9252bce449a18ac72245"
+  integrity sha512-aH9HulFKHyjZrqeZNkXQVet/Pt1ZxgNDqmu3RIrjke2TkkT42a1FTp17mcCOF7L8/2Hcg6sut9riGzoRJT7lKg==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-image@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-image/-/wired-image-2.0.2.tgz#95c722d7eb346ea706ac9dc167459e04625c3627"
+  integrity sha512-LEwr3Hz7jtsFFzpYZ6rdG7dcEzs9ROK5k7hu8+12XH0A3HquucgoWP+5iTcUFfp+04g8QOi0ZMdMTLZSXNQv2A==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-input@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-input/-/wired-input-2.0.2.tgz#2780dad520f166693901728fbbf8fb767cdd69bc"
+  integrity sha512-wlv5LIFHLI1PWGIvPvJ2OuYvE4swcdrq3+BfEQlGPyNEcNibwnyzKuY0UJ5MbR1dIWGoYnhXjlgKrDSyv8UBaA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-item@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-item/-/wired-item-2.0.2.tgz#acd8a8f355c9265e77e9f880e3a853f9fc7c387f"
+  integrity sha512-RAMx72R+FYJZ9MAliEtAriu+9goPJc4S5pUaP8lBxjMpBMBE+qg0d15I5/rpgY6i55rbzpfr8ts7DoLQ76vDjg==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-lib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/wired-lib/-/wired-lib-2.0.0.tgz#675995ffb9e75b172279ae4db38185ab5011157b"
+  integrity sha512-ro8aBzI0GE9h2/aTBU2Pfqbrxi7p+X5xIu2EgxSS/QoYK0QN9r0O5mFKeQOFRlYwn4RE5SdMgJFM/p9xK5XI3w==
+  dependencies:
+    lit-element "^2.2.1"
+    roughjs "^3.1.0"
+
+wired-link@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-link/-/wired-link-2.0.2.tgz#26987f3b295e3dd29d91cc252338222730c52c40"
+  integrity sha512-2I38C5WHEGFLCq8U+aHR2qgCCQCz7dsR7fP8NHnDGaaOY6jS7TVo7mXIabyGF2x3u9JRxg58MMD/O6y72oQ7aQ==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-listbox@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-listbox/-/wired-listbox-2.0.2.tgz#c80cb9d9c3a8623698982538d416dbe0a7c86d29"
+  integrity sha512-nGJV149sjFS3XINmq+giAKPFJFpslzsioyKTJMS6dvzw1Ti8LxCORl3S78w8nYOSFzYdDRiCVV9AumsZmGW94Q==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-progress@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-progress/-/wired-progress-2.0.2.tgz#2afd9c6593461a058bd4ba41ef5ac08c1df463c0"
+  integrity sha512-ML+sX70fna/kYjUgZlZLWDMYS1ObchzgoE89/qto/pA26VAt31NFV0G7bbFl+VgdSzoGs2hMUDA5B/3sfW2RSA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-radio-group@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-radio-group/-/wired-radio-group-2.0.2.tgz#ea45bbd50b1f5ad614f63cfca1500e84093e028a"
+  integrity sha512-rui+wiTu2GW9+mENCeZdC351ztuV6+73JGH8Zq4UyllK9iYx1c4IjhNxkzeb4LmBWE8liTgPYwf/11abAtGekA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-radio@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-radio/-/wired-radio-2.0.2.tgz#51badba066788c7b00d8f3f3a711549cba106477"
+  integrity sha512-+5BMX/QuoAsV7H962jRmirUfzEOfD6zfg62BTItTdDv8NUrY7gZp21mbbuPNs6x3T1QFSaSyiHAIQsbuM0NZNA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-search-input@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-search-input/-/wired-search-input-2.0.2.tgz#28c7f199f8b7e659cad9a467eb410ecc1c520cfb"
+  integrity sha512-QS0k2nEKn3y830of31qKweFBzRhZAom7va5DGfSbg0u8h/7PF6+W3Ee0cu+2jJ6k6b/eA+k7Fv/jq0jEEoeA2g==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-slider@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-slider/-/wired-slider-2.0.2.tgz#07d9db0ea96591abc80e25832bac1f0692a6b056"
+  integrity sha512-fOP7K2QY1mNYGco1NvdpRz6t8nya9XseJNLxe9UqT6hj7bXZs8PV/4I5DMePMFGJo54CCpubZ1nd/RK2j3xQsg==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-spinner@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-spinner/-/wired-spinner-2.0.2.tgz#e5f8aae4664bb27e2d61ab962f9423b226374c05"
+  integrity sha512-WWeCBULgPzyX1tFJtbpqnjy5aJD8ctLlwowsAfoABUK4wm352IJKrN1YTHoThoIOKLlnv1m/1gOxsptgKD/IqQ==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-tab@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-tab/-/wired-tab-2.0.2.tgz#f305e7fd114246f82802c21fc8faa2b38b1e6c75"
+  integrity sha512-PoEK11hRuzaszyyxb0NCG8l1C5cDG6PKUhEuZ3ss9bTyMscJb3AI4/y1UKXq3jaWoJEmaWjQ7DfmKGBsGKo48g==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-item "^2.0.2"
+    wired-lib "^2.0.0"
+
+wired-tabs@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-tabs/-/wired-tabs-2.0.2.tgz#cff1d6ae37ecd4bff50022662adf9a804b0e5a19"
+  integrity sha512-z1MUI3lcE2nHLO81y/3JW6G+l3V3OmWyMJ5B2ilzFj5qCTAdTX4dIZ8m+QYk1b0tRIbCEy/jlDmizFhz17ngKA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-textarea@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-textarea/-/wired-textarea-2.0.2.tgz#44c53ad87ec4258e650f3a699dfd0fbb886051b1"
+  integrity sha512-xt91kypUCFENjMRRbxCqDXLBbtDxnAmrqL6+V4bA4Fj3hGcZlY+rQ8QkxU0mFWotnbiTv/je+sj6F2q+OEcrGw==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-toggle@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-toggle/-/wired-toggle-2.0.2.tgz#3d1d06a350a28e22d39cc770a7c20960ef3da826"
+  integrity sha512-4tHGvP6LEhHee3OIJBliCECo6H16pzEeWfbmwdpklh7bfP7GLokd58ICSmOAPl5mIdnpgYFNQm4w9PBXtKIDNA==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-lib "^2.0.0"
+
+wired-video@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/wired-video/-/wired-video-2.0.2.tgz#5d05821ae320553debee242df00b9f968e9c4706"
+  integrity sha512-qm0b9881Q4kkwWmrUhmOGmjamf0WmtDoVQVLw24ym1SzQzKhh63C1rFzcOVgo1sTPaGvedoY85eUHR7zXjFxtQ==
+  dependencies:
+    lit-element "^2.2.1"
+    wired-icon-button "^2.0.2"
+    wired-lib "^2.0.0"
+    wired-progress "^2.0.2"
+    wired-slider "^2.0.2"
+
 with@^5.0.0:
   version "5.1.1"
   resolved "https://registry.npmjs.org/with/-/with-5.1.1.tgz#fa4daa92daf32c4ea94ed453c81f04686b575dfe"
@@ -12509,6 +12762,11 @@ worker-rpc@^0.1.0:
   integrity sha512-P1WjMrUB3qgJNI9jfmpZ/htmBEjFh//6l/5y8SD9hg1Ef5zTTVVoRjTrTEzPrNBQvmhMxkoTsjOXN10GWU7aCg==
   dependencies:
     microevent.ts "~0.1.1"
+
+workly@^1.2.0:
+  version "1.3.1"
+  resolved "https://registry.npmjs.org/workly/-/workly-1.3.1.tgz#95d34cbac3b47035e56eb7a582a9b24a611393db"
+  integrity sha512-1hI5IvagEAdCj81Vtc9Rn3DZkNJ4o2LexbpFFUJjZWlr8aBbGGm95Nu84ZC2EvzJpfm2j+4s+bVjNFeWAp03/A==
 
 wrap-ansi@^3.0.1:
   version "3.0.1"

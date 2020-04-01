@@ -1,21 +1,22 @@
 import * as React from 'react';
 import { BaseProps } from './types';
-import { useCustomElement } from './utils/useCustomElement';
-const { useMemo } = React;
+import { WiredItem } from './WiredItem';
 
-// TODO: Get this working and figure out and document default colors.
+const { useState, useRef } = React;
 
 export interface WiredTabsProps extends BaseProps {
   /**
    * Name of the currently selected tab.
    */
-  selected?: string;
+  initialSelected?: string;
   /**
    * Text color of the selected tab.
+   * @default white
    */
   selectedColor?: string;
   /**
    * Background color of the selected tab.
+   * @default black
    */
   selectedBgColor?: string;
   /**
@@ -26,20 +27,54 @@ export interface WiredTabsProps extends BaseProps {
 
 export const WiredTabs = ({
   children,
-  selected,
-  selectedColor,
-  selectedBgColor,
+  initialSelected,
+  selectedColor = 'white',
+  selectedBgColor = 'black',
 }: WiredTabsProps) => {
-  const customValues = useMemo(() => {
-    return {
-      attributes: { selected },
-      css: {
-        '--wired-item-selected-bg': selectedBgColor,
-        '--wired-item-selected-color': selectedColor,
-      },
-    };
-  }, [selected, selectedColor, selectedBgColor]);
+  const [selectedValue, setSelectedValue] = useState(initialSelected);
+  const tabsRef = useRef<HTMLDivElement>(null!);
 
-  const register = useCustomElement(customValues);
-  return <wired-tabs ref={register}>{children}</wired-tabs>;
+  function handleSelected(e: any) {
+    setSelectedValue(e);
+  }
+
+  return (
+    <div>
+      <div ref={tabsRef}>
+        {(children as any[]).map(child => {
+          return (
+            <WiredItem
+              selectedColor={selectedColor}
+              selectedBgColor={selectedBgColor}
+              onClick={() => handleSelected(child.props.name)}
+              selected={selectedValue === child.props.name}
+              key={child.props.name}
+              value={child.props.name}
+            >
+              {child.props.name}
+            </WiredItem>
+          );
+        })}
+      </div>
+      <div>
+        {(children as any[]).map((Child: any) => {
+          if (Child.props.name === selectedValue) {
+            return (
+              <div
+                key={Child}
+                style={{
+                  width: tabsRef?.current
+                    ? tabsRef?.current.clientWidth
+                    : 'auto',
+                }}
+              >
+                {Child}
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
+    </div>
+  );
 };

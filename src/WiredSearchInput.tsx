@@ -45,7 +45,7 @@ export const WiredSearchInput = ({
       attributes: { placeholder, disabled, value },
       methods: { keyup: onChange, blur: onBlur, focus: onFocus },
     };
-  }, [placeholder, disabled, value, onChange, onBlur]);
+  }, [placeholder, disabled, value, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
   return <wired-search-input ref={register}></wired-search-input>;

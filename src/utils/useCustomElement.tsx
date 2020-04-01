@@ -45,7 +45,7 @@ export function useCustomElement(values: Values) {
     }
     const methods = values['methods'];
     methods && addMethods(methods);
-  }, []);
+  }, [values]);
 
   function register(option: any) {
     ref.current = option;

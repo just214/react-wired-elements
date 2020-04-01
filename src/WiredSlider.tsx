@@ -67,7 +67,16 @@ export const WiredSlider = ({
       },
       methods: { change: onChange },
     };
-  }, [value, min, max, knobRadius, knobZeroColor, knobColor, barColor]);
+  }, [
+    value,
+    min,
+    max,
+    knobRadius,
+    knobZeroColor,
+    knobColor,
+    barColor,
+    onChange,
+  ]);
 
   const register = useCustomElement(customValues);
   return <wired-slider ref={register}></wired-slider>;

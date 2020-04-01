@@ -21,9 +21,7 @@
 yarn add react-wired-elements
 ```
 
-**Step 2.** Include the Wired Elements and Material Icons packages in the head of your main HTML file.
-
-**The `wired-elements` npm package will not work.**
+**Step 2.** Include the Material Icons packages in the head of your main HTML file.
 
 ```html
 <head>
@@ -31,7 +29,6 @@ yarn add react-wired-elements
     href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
     rel="stylesheet"
   />
-  <script src="https://unpkg.com/wired-elements@2.0.5/lib/wired-elements-bundled.js"></script>
 </head>
 ```
 
@@ -84,7 +81,6 @@ Here is the full list of components. Click any component to be directed to it's 
 
 There are some naming and functionality differences between Wired Elements and this library. This is due, in part, to differences in how React and web components work as well as an effort to follow common naming conventions/patterns in React. Since these are web components, they dispatch native events as opposed to React synthetic events.
 
-- `WiredTabs` just not working :/
 - `maxRows` prop on `WiredTextArea` component not working
 - `firstDate` and `lastDate` not working on `WiredCalendar`
 - `knobRadius` not working on `WiredSlider`

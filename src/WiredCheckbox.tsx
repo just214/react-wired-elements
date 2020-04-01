@@ -37,7 +37,7 @@ export const WiredCheckbox = ({
       methods: { change: onChange },
       css: { '--wired-checkbox-icon-color': color },
     };
-  }, [checked, disabled, color]);
+  }, [checked, disabled, color, onChange]);
 
   const register = useCustomElement(customValues);
 

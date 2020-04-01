@@ -17,9 +17,7 @@
 yarn add react-wired-elements
 ```
 
-**Step 2.** Include the Wired Elements and Material Icons packages in the head of your main HTML file.
-
-**The `wired-elements` npm package will not work.**
+**Step 2.** Include the Material Icons packages in the head of your main HTML file.
 
 ```html
 <head>
@@ -27,7 +25,6 @@ yarn add react-wired-elements
     href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
     rel="stylesheet"
   />
-  <script src="https://unpkg.com/wired-elements@2.0.5/lib/wired-elements-bundled.js"></script>
 </head>
 ```
 

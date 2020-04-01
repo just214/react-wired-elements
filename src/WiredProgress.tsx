@@ -105,7 +105,6 @@ export const WiredProgress = ({
     progressBarColor,
     fontSize,
     stuckAtValue,
-    stuckAt,
   ]);
 
   const register = useCustomElement(customValues);

@@ -49,7 +49,7 @@ export const WiredFab = ({
       methods: { click: onClick },
       css: { '--wired-fab-bg-color': bgColor, color: iconColor },
     };
-  }, [disabled, bgColor]);
+  }, [disabled, bgColor, iconColor, onClick]);
 
   const register = useCustomElement(customValues);
   return (

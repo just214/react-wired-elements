@@ -52,7 +52,7 @@ export const WiredCombo = ({
         '--wired-item-selected-bg': selectedBgColor,
       },
     };
-  }, [children, disabled, value, onSelect, popupBgColor, selectedBgColor]);
+  }, [disabled, value, onSelect, popupBgColor, selectedBgColor]);
 
   const register = useCustomElement(customValues);
   return <wired-combo ref={register}>{children}</wired-combo>;

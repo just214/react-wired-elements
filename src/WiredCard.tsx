@@ -35,7 +35,7 @@ export const WiredCard = ({
       attributes: { elevation, fill },
       methods: { requestUpdate },
     };
-  }, [elevation, fill]);
+  }, [elevation, fill, requestUpdate]);
 
   const register = useCustomElement(customValues);
 

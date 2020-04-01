@@ -36,7 +36,7 @@ export const WiredButton = ({
       attributes: { disabled, elevation },
       methods: { click: onClick },
     };
-  }, [elevation, disabled]);
+  }, [elevation, disabled, onClick]);
 
   const register = useCustomElement(customValues);
   return <wired-button ref={register}>{children}</wired-button>;

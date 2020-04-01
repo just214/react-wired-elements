@@ -26,5 +26,9 @@ export const WiredTab = ({ children, name, label }: WiredTabProps) => {
   }, [name, label]);
 
   const register = useCustomElement(customValues);
-  return <wired-tab ref={register}>{children}</wired-tab>;
+  return (
+    <wired-tab style={{ minWidth: '200px' }} ref={register}>
+      {children}
+    </wired-tab>
+  );
 };

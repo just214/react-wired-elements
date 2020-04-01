@@ -76,6 +76,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@material/mwc-icon": "^0.14.1"
+    "@material/mwc-icon": "^0.14.1",
+    "wired-elements": "^2.0.5"
   }
 }
