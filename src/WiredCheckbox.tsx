@@ -3,7 +3,7 @@ import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 import { useMemo } from 'react';
 
-export interface WiredCheckboxProps extends BaseProps {
+export interface WiredCheckBoxProps extends BaseProps {
   /**
    * Rather the checkbox is checked or not.
    * @default false
@@ -25,12 +25,12 @@ export interface WiredCheckboxProps extends BaseProps {
   onChange?(e: CustomEvent): void;
 }
 
-export const WiredCheckbox = ({
+export const WiredCheckBox = ({
   checked = false,
   color = 'currentColor',
   disabled = false,
   onChange,
-}: WiredCheckboxProps) => {
+}: WiredCheckBoxProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { disabled, checked },

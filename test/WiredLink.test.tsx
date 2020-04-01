@@ -1,11 +1,11 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredButton } from '../src';
+import { WiredLink } from '../src';
 
-describe('WiredButton', () => {
+describe('WiredLink', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<WiredButton />, div);
+    ReactDOM.render(<WiredLink />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

@@ -3,46 +3,46 @@ import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 const { useMemo } = React;
 
-export interface WiredTextareaProps extends BaseProps {
+export interface WiredTextAreaProps extends BaseProps {
   /**
-   * Placeholder text for the textarea.
+   * Placeholder text for the TextArea.
    */
   placeholder?: string;
   /**
-   * Disable the textarea.
+   * Disable the TextArea.
    * @default false
    */
   disabled?: boolean;
 
   /**
-   * The value of the textarea.
+   * The value of the TextArea.
    */
   value?: string;
   /**
-   * Initial number of rows in textarea.
+   * Initial number of rows in TextArea.
    * @default 3
    */
   rows?: number;
   /**
-   * Maximum number of rows in textarea.
+   * Maximum number of rows in TextArea.
    * @default 20
    */
   maxRows?: number;
   /**
-   * Event that fires any time the textarea text is changed.
+   * Event that fires any time the TextArea text is changed.
    */
   onChange?(e: React.ChangeEvent<HTMLInputElement>): void;
   /**
-   * Event that fires any time the textarea is blurred.
+   * Event that fires any time the TextArea is blurred.
    */
   onBlur?(e: React.ChangeEvent<HTMLInputElement>): void;
   /**
-   * Event that fires any time the textarea is focused.
+   * Event that fires any time the TextArea is focused.
    */
   onFocus?(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-export const WiredTextarea = ({
+export const WiredTextArea = ({
   placeholder,
   disabled,
   value,
@@ -51,7 +51,7 @@ export const WiredTextarea = ({
   onChange,
   onBlur,
   onFocus,
-}: WiredTextareaProps) => {
+}: WiredTextAreaProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { placeholder, disabled, value, rows, maxrows: maxRows },
@@ -65,5 +65,5 @@ export const WiredTextarea = ({
 
 /*
 TODO: Not working-
-maxrows - Max number of rows textarea grows to. Then scrollbars appear.
+maxrows - Max number of rows TextArea grows to. Then scrollbars appear.
 */

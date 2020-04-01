@@ -1,16 +1,16 @@
 import React from 'react';
-import { WiredTextarea } from '../src';
+import { WiredTextArea } from '../src';
 import { text, boolean, number } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { Container } from './Container';
 
 export default {
-  title: 'WiredTextarea',
+  title: 'WiredTextArea',
 };
 
 export const Default = () => (
   <Container>
-    <WiredTextarea
+    <WiredTextArea
       placeholder={text('placeholder', 'Enter your name')}
       value=""
       disabled={boolean('disabled', false)}

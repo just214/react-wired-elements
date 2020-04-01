@@ -1,11 +1,11 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredButton } from '../src';
+import { WiredToggle } from '../src';
 
-describe('WiredButton', () => {
+describe('WiredToggle', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<WiredButton />, div);
+    ReactDOM.render(<WiredToggle />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

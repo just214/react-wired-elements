@@ -1,16 +1,16 @@
 import React from 'react';
-import { WiredListbox, WiredItem } from '../src';
+import { WiredListBox, WiredItem } from '../src';
 import { color, boolean } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { Container } from './Container';
 
 export default {
-  title: 'WiredListbox',
+  title: 'WiredListBox',
 };
 
 export const Default = () => (
   <Container>
-    <WiredListbox
+    <WiredListBox
       selected="item1"
       horizontal={boolean('horizontal', false)}
       onSelect={action('onSelect Fired')}
@@ -20,6 +20,6 @@ export const Default = () => (
       <WiredItem value="item1">Item 1</WiredItem>
       <WiredItem value="item2">Item 2</WiredItem>
       <WiredItem value="item3">Item 3</WiredItem>
-    </WiredListbox>
+    </WiredListBox>
   </Container>
 );

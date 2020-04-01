@@ -3,7 +3,7 @@ import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 const { useMemo } = React;
 
-export interface WiredListboxProps extends BaseProps {
+export interface WiredListBoxProps extends BaseProps {
   /**
    * Lays out the items horizontally.
    * @default false
@@ -34,14 +34,14 @@ export interface WiredListboxProps extends BaseProps {
   children?: React.ReactNode;
 }
 
-export const WiredListbox = ({
+export const WiredListBox = ({
   children,
   horizontal = false,
   selected,
   onSelect,
   color = 'black',
   bgColor = 'white',
-}: WiredListboxProps) => {
+}: WiredListBoxProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { horizontal, selected },

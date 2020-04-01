@@ -12,3 +12,5 @@
 - Fixed `WiredTabs` component (previously not working).
 - Refactored `WiredItem` to utilize controlled input. Mainly for `WiredTabs`.
 - Fixed various bugs.
+- Fixed casing on components to match TitleCase format.
+- Added unit tests for each component.
