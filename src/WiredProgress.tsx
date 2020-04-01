@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
-const { useMemo } = React;
+const { useMemo, useState, useEffect } = React;
 
 export interface WiredProgressProps extends BaseProps {
   /**
@@ -44,6 +44,11 @@ export interface WiredProgressProps extends BaseProps {
    * @default "14px"
    */
   fontSize?: number;
+  /**
+   * An optional value between 1 and 100 (%) which will cause the progress bar to be "stuck" at that value with an animated feel.
+   * @default "14px"
+   */
+  stuckAt?: number;
 }
 
 export const WiredProgress = ({
@@ -55,10 +60,34 @@ export const WiredProgress = ({
   labelBgColor = 'rgba(255,255,255,0.9)',
   progressBarColor = 'rgba(0, 0, 200, 0.8)',
   fontSize = 14,
+  stuckAt,
 }: WiredProgressProps) => {
+  const [stuckAtValue, setStuckAtValue] = useState<number | null>(null);
+
+  /**
+   * The stuckAt prop sets an interval that alternates between the stuckAt prop value
+   * and the same value + .01 every 750 milliseconds.
+   * This is forces re-renders, which paints a new SVG each time, giving an animated look.
+   */
+  useEffect(() => {
+    let interval: any;
+    if (stuckAt) {
+      interval = setInterval(() => {
+        setStuckAtValue(s => (s === stuckAt ? s + 0.01 : stuckAt));
+      }, 750);
+    }
+
+    return () => clearInterval(interval);
+  }, [stuckAt]);
+
   const customValues = useMemo(() => {
     return {
-      attributes: { value, min, max, percentage: showPercentage },
+      attributes: {
+        value: stuckAtValue || value,
+        min: stuckAtValue ? 0 : min,
+        max: stuckAtValue ? 100 : max,
+        percentage: showPercentage,
+      },
       css: {
         '--wired-progress-label-color': labelColor,
         '--wired-progress-label-background': labelBgColor,
@@ -75,6 +104,8 @@ export const WiredProgress = ({
     labelBgColor,
     progressBarColor,
     fontSize,
+    stuckAtValue,
+    stuckAt,
   ]);
 
   const register = useCustomElement(customValues);

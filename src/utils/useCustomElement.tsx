@@ -54,13 +54,13 @@ export function useCustomElement(values: Values) {
 
   // This hook fires on any change to ensure that things are repainted as necessary.
   useEffect(() => {
-    // A hack, but it works.
+    // A hack, but it works for now.
     setTimeout(() => {
-      ref.current.requestUpdate();
+      if (ref.current.requestUpdate) {
+        ref.current.requestUpdate();
+      }
     }, 0);
   });
-
-  // register.ref = ref;
 
   function addAttributes(attrList: any) {
     Object.keys(attrList).forEach(key => {

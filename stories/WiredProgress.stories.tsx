@@ -18,6 +18,7 @@ export const Default = () => (
   <Container>
     <WiredProgress
       value={number('value', 20, options)}
+      stuckAt={number('stuckAt', null)}
       min={number('min', 1, options)}
       max={number('max', 100, options)}
       showPercentage={boolean('showPercentage', true)}
