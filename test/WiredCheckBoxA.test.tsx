@@ -1,11 +1,11 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WiredTextArea } from '../src/WiredTextArea';
+import { WiredCheckBox } from '../src/WiredCheckBoxA';
 
-describe('WiredTextArea', () => {
+describe('WiredCheckBox', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<WiredTextArea />, div);
+    ReactDOM.render(<WiredCheckBox />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
