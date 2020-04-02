@@ -15,3 +15,9 @@
 - Fixed casing on components to match TitleCase format.
 - Added unit tests for each component.
 - Fixed issue with `zeroKnobColor` prop on `WiredSlider`
+
+## 0.1.3
+
+04/01/2020
+
+- Updated to use `wired-elements` cjs bundle.

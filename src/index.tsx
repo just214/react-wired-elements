@@ -1,28 +1,5 @@
-import 'wired-button';
-import 'wired-calendar';
-import 'wired-card';
-import 'wired-checkbox';
-import 'wired-combo';
-import 'wired-dialog';
-import 'wired-divider';
-import 'wired-fab';
-import 'wired-icon-button';
-import 'wired-image';
-import 'wired-input';
-import 'wired-item';
-import 'wired-link';
-import 'wired-listbox';
-import 'wired-progress';
-import 'wired-radio';
-import 'wired-radio-group';
-import 'wired-search-input';
-import 'wired-slider';
-import 'wired-spinner';
-import 'wired-tab';
-import 'wired-tabs';
-import 'wired-textarea';
-import 'wired-toggle';
-import 'wired-video';
+// @ts-ignore
+import 'wired-elements/lib/wired-elements-bundled.cjs';
 export * from './WiredButton';
 export * from './WiredCalendar';
 export * from './WiredCard';
@@ -31,13 +8,13 @@ export * from './WiredCombo';
 export * from './WiredDialog';
 export * from './WiredDivider';
 export * from './WiredFab';
-export * from './WiredIconButton'; // TODO: Fix whatever is wrong!
+export * from './WiredIconButton';
 export * from './WiredImage';
 export * from './WiredInput';
 export * from './WiredItem';
 export * from './WiredLink';
 export * from './WiredListBox';
-export * from './WiredProgress'; // TODO: Font size not working
+export * from './WiredProgress';
 export * from './WiredRadio';
 export * from './WiredRadioGroup';
 export * from './WiredSearchInput';
