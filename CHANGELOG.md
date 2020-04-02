@@ -21,3 +21,10 @@
 04/01/2020
 
 - Updated to use `wired-elements` cjs bundle.
+
+## 0.1.4
+
+04/01/2020
+
+- Defaulted `WiredInput` and `WiredSearchInput`'s `value` and `placeholder` props to empty strings to prevent initial value of "undefined"
+- Fixed issue where `WiredSearchInput` wasn't clearing the state when the "clear" button was clicked.

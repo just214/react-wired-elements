@@ -86,5 +86,16 @@ export function useCustomElement(values: Values) {
     });
   }, [attrs]);
 
+  // This event listener is for the WiredSearchInput so that it can
+  // be detected when the user hits the clear button.
+  useEffect(() => {
+    ref.current.addEventListener('input', (e: any) => {
+      setAttrs(a => ({
+        ...a,
+        value: e.target.value,
+      }));
+    });
+  }, []);
+
   return register;
 }

@@ -13,7 +13,6 @@ export const Default = () => (
   <Container>
     <WiredInput
       placeholder={text('placeholder', 'Email Address')}
-      value=""
       type={select('type', inputTypes, 'email')}
       disabled={boolean('disabled', false)}
       onChange={action('onChange fired.')}

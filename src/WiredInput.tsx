@@ -50,7 +50,7 @@ export const WiredInput = ({
   const customValues = useMemo(() => {
     return {
       attributes: { placeholder, disabled, type, value },
-      methods: { keyup: onChange, blur: onBlur, focus: onFocus },
+      methods: { input: onChange, blur: onBlur, focus: onFocus },
     };
   }, [placeholder, disabled, type, value, onChange, onBlur, onFocus]);
 

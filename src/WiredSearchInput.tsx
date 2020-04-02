@@ -43,7 +43,7 @@ export const WiredSearchInput = ({
   const customValues = useMemo(() => {
     return {
       attributes: { placeholder, disabled, value },
-      methods: { keyup: onChange, blur: onBlur, focus: onFocus },
+      methods: { input: onChange, blur: onBlur, focus: onFocus },
     };
   }, [placeholder, disabled, value, onChange, onBlur, onFocus]);
 
