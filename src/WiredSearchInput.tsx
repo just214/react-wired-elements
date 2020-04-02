@@ -33,9 +33,9 @@ export interface WiredSearchInputProps extends BaseProps {
 }
 
 export const WiredSearchInput = ({
-  placeholder,
+  placeholder = '',
   disabled = false,
-  value,
+  value = '',
   onChange,
   onBlur,
   onFocus,

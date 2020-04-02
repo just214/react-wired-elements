@@ -39,10 +39,10 @@ export interface WiredInputProps extends BaseProps {
 }
 
 export const WiredInput = ({
-  placeholder,
+  placeholder = '',
   disabled = false,
   type = 'text',
-  value,
+  value = '',
   onChange,
   onBlur,
   onFocus,
