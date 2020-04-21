@@ -51,6 +51,8 @@ export const WiredTextArea = ({
   onChange,
   onBlur,
   onFocus,
+  className,
+  style,
 }: WiredTextAreaProps) => {
   const customValues = useMemo(() => {
     return {
@@ -60,7 +62,13 @@ export const WiredTextArea = ({
   }, [placeholder, disabled, value, rows, maxRows, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
-  return <wired-textarea ref={register}></wired-textarea>;
+  return (
+    <wired-textarea
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-textarea>
+  );
 };
 
 /*

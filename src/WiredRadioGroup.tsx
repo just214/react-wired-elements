@@ -22,6 +22,8 @@ export const WiredRadioGroup = ({
   children,
   selected,
   onSelect,
+  className,
+  style,
 }: WiredRadioGroupProps) => {
   const customValues = useMemo(() => {
     return {
@@ -31,5 +33,9 @@ export const WiredRadioGroup = ({
   }, [selected, onSelect]);
 
   const register = useCustomElement(customValues);
-  return <wired-radio-group ref={register}>{children}</wired-radio-group>;
+  return (
+    <wired-radio-group class={className} style={style} ref={register}>
+      {children}
+    </wired-radio-group>
+  );
 };

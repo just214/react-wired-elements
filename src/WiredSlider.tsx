@@ -50,6 +50,8 @@ export const WiredSlider = ({
   knobColor = 'rgba(0, 0, 200, 0.8)',
   barColor = 'currentColor',
   onChange,
+  className,
+  style,
 }: WiredSliderProps) => {
   const customValues = useMemo(() => {
     return {
@@ -64,5 +66,7 @@ export const WiredSlider = ({
   }, [value, min, max, knobZeroColor, knobColor, barColor, onChange]);
 
   const register = useCustomElement(customValues);
-  return <wired-slider ref={register}></wired-slider>;
+  return (
+    <wired-slider class={className} style={style} ref={register}></wired-slider>
+  );
 };

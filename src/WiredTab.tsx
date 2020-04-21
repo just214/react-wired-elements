@@ -18,7 +18,13 @@ export interface WiredTabProps extends BaseProps {
   children?: React.ReactNode;
 }
 
-export const WiredTab = ({ children, name, label }: WiredTabProps) => {
+export const WiredTab = ({
+  children,
+  name,
+  label,
+  className,
+  style,
+}: WiredTabProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { name, label },
@@ -26,8 +32,9 @@ export const WiredTab = ({ children, name, label }: WiredTabProps) => {
   }, [name, label]);
 
   const register = useCustomElement(customValues);
+  const appliedStyle = { ...style, minWidth: '200px' };
   return (
-    <wired-tab style={{ minWidth: '200px' }} ref={register}>
+    <wired-tab class={className} style={appliedStyle} ref={register}>
       {children}
     </wired-tab>
   );

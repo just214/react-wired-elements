@@ -61,6 +61,8 @@ export const WiredProgress = ({
   progressBarColor = 'rgba(0, 0, 200, 0.8)',
   fontSize = 14,
   stuckAt,
+  className,
+  style,
 }: WiredProgressProps) => {
   const [stuckAtValue, setStuckAtValue] = useState<number | null>(null);
 
@@ -108,5 +110,11 @@ export const WiredProgress = ({
   ]);
 
   const register = useCustomElement(customValues);
-  return <wired-progress ref={register}></wired-progress>;
+  return (
+    <wired-progress
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-progress>
+  );
 };

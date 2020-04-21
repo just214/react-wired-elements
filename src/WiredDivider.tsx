@@ -11,7 +11,11 @@ export interface WiredDividerProps extends BaseProps {
   elevation?: 1 | 2 | 3 | 4 | 5;
 }
 
-export const WiredDivider = ({ elevation = 1 }: WiredDividerProps) => {
+export const WiredDivider = ({
+  elevation = 1,
+  className,
+  style,
+}: WiredDividerProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { elevation },
@@ -20,5 +24,11 @@ export const WiredDivider = ({ elevation = 1 }: WiredDividerProps) => {
 
   const register = useCustomElement(customValues);
 
-  return <wired-divider ref={register}></wired-divider>;
+  return (
+    <wired-divider
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-divider>
+  );
 };

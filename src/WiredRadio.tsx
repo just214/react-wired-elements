@@ -41,6 +41,8 @@ export const WiredRadio = ({
   color = 'currentColor',
   onChange,
   children,
+  className,
+  style,
 }: WiredRadioProps) => {
   const customValues = useMemo(() => {
     return {
@@ -51,5 +53,9 @@ export const WiredRadio = ({
   }, [checked, disabled, name, color, onChange]);
 
   const register = useCustomElement(customValues);
-  return <wired-radio ref={register}>{children}</wired-radio>;
+  return (
+    <wired-radio class={className} style={style} ref={register}>
+      {children}
+    </wired-radio>
+  );
 };

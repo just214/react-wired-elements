@@ -46,6 +46,8 @@ export const WiredInput = ({
   onChange,
   onBlur,
   onFocus,
+  className,
+  style,
 }: WiredInputProps) => {
   const customValues = useMemo(() => {
     return {
@@ -55,5 +57,7 @@ export const WiredInput = ({
   }, [placeholder, disabled, type, value, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
-  return <wired-input ref={register}></wired-input>;
+  return (
+    <wired-input class={className} style={style} ref={register}></wired-input>
+  );
 };

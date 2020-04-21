@@ -40,6 +40,8 @@ export const WiredLink = ({
   color = 'black',
   lineColor = 'black',
   children,
+  className,
+  style,
 }: WiredLinkProps) => {
   const customValues = useMemo(() => {
     return {
@@ -50,5 +52,9 @@ export const WiredLink = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-link ref={register}>{children}</wired-link>;
+  return (
+    <wired-link class={className} style={style} ref={register}>
+      {children}
+    </wired-link>
+  );
 };

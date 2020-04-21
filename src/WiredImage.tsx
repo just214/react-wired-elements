@@ -19,6 +19,8 @@ export interface WiredImageProps extends BaseProps {
 export const WiredImage = ({
   elevation = 1,
   src = 'http://placekitten.com/200/300',
+  className,
+  style,
 }: WiredImageProps) => {
   const customValues = useMemo(() => {
     return {
@@ -27,5 +29,7 @@ export const WiredImage = ({
   }, [elevation, src]);
 
   const register = useCustomElement(customValues);
-  return <wired-image ref={register}></wired-image>;
+  return (
+    <wired-image class={className} style={style} ref={register}></wired-image>
+  );
 };

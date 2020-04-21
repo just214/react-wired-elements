@@ -41,6 +41,8 @@ export const WiredListBox = ({
   onSelect,
   color = 'black',
   bgColor = 'white',
+  className,
+  style,
 }: WiredListBoxProps) => {
   const customValues = useMemo(() => {
     return {
@@ -55,5 +57,9 @@ export const WiredListBox = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-listbox ref={register}>{children}</wired-listbox>;
+  return (
+    <wired-listbox class={className} style={style} ref={register}>
+      {children}
+    </wired-listbox>
+  );
 };

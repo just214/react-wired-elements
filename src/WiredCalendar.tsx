@@ -78,6 +78,8 @@ export const WiredCalendar = ({
   selectedColor = 'red',
   dimmedColor = 'gray',
   onSelect,
+  className,
+  style,
 }: WiredCalendarProps) => {
   const customValues = useMemo(() => {
     return {
@@ -118,7 +120,13 @@ export const WiredCalendar = ({
   ]);
 
   const register = useCustomElement(customValues);
-  return <wired-calendar ref={register}></wired-calendar>;
+  return (
+    <wired-calendar
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-calendar>
+  );
 };
 
 /*

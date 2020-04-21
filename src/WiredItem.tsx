@@ -48,6 +48,8 @@ export const WiredItem = ({
   color = 'black',
   selected = false,
   onClick,
+  className,
+  style,
 }: WiredItemProps) => {
   const customValues = useMemo(() => {
     return {
@@ -60,10 +62,16 @@ export const WiredItem = ({
   }, [value, selectedBgColor, selectedColor, selected]);
 
   const register = useCustomElement(customValues);
+  const appliedStyle: any = { ...style };
+  appliedStyle.backgroundColor = selected
+    ? selectedBgColor
+    : style?.backgroundColor;
+  appliedStyle.color = selected ? selectedColor : color || style?.color;
   return (
     <wired-item
+      class={className}
+      style={appliedStyle}
       onClick={() => onClick && onClick(selected)}
-      style={{ color: selected ? selectedColor : color }}
       ref={register}
     >
       {children}
