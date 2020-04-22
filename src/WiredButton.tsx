@@ -36,13 +36,17 @@ export const WiredButton = ({
   const customValues = useMemo(() => {
     return {
       attributes: { disabled, elevation },
-      methods: { click: onClick },
     };
-  }, [elevation, disabled, onClick]);
+  }, [elevation, disabled]);
 
   const register = useCustomElement(customValues);
   return (
-    <wired-button class={className} style={style} ref={register}>
+    <wired-button
+      onClick={onClick}
+      class={className}
+      style={style}
+      ref={register}
+    >
       {children}
     </wired-button>
   );
