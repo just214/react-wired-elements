@@ -69,6 +69,7 @@ export const WiredItem = ({
   appliedStyle.color = selected ? selectedColor : color || style?.color;
   return (
     <wired-item
+      value={value}
       class={className}
       style={appliedStyle}
       onClick={() => onClick && onClick(selected)}
