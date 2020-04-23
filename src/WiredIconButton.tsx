@@ -57,14 +57,18 @@ export const WiredIconButton = ({
   const customValues = useMemo(() => {
     return {
       attributes: { disabled },
-      methods: { click: onClick },
       css: { color: lineColor, '--mdc-icon-size': iconSize },
     };
-  }, [disabled, lineColor, iconSize, onClick]);
+  }, [disabled, lineColor, iconSize]);
 
   const register = useCustomElement(customValues);
   return (
-    <wired-icon-button class={className} style={style} ref={register}>
+    <wired-icon-button
+      onClick={onClick}
+      class={className}
+      style={style}
+      ref={register}
+    >
       <div style={{ height: '24px', width: '24px' }}>
         {children || (
           <span
