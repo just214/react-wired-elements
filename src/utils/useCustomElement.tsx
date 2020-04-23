@@ -56,7 +56,7 @@ export function useCustomElement(values: Values) {
   useEffect(() => {
     // A hack, but it works for now.
     setTimeout(() => {
-      if (ref.current.requestUpdate) {
+      if (ref.current?.requestUpdate) {
         ref.current.requestUpdate();
       }
     }, 0);
