@@ -29,6 +29,8 @@ export const WiredCard = ({
   elevation,
   fill,
   children,
+  className,
+  style,
 }: WiredCardProps) => {
   const customValues = useMemo(() => {
     return {
@@ -39,5 +41,9 @@ export const WiredCard = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-card ref={register}>{children}</wired-card>;
+  return (
+    <wired-card class={className} style={style} ref={register}>
+      {children}
+    </wired-card>
+  );
 };

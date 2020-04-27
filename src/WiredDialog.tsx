@@ -30,6 +30,8 @@ export const WiredDialog = ({
   elevation = 1,
   open = false,
   zIndex = 1,
+  className,
+  style,
 }: WiredDialogProps) => {
   const customValues = useMemo(() => {
     return {
@@ -39,5 +41,9 @@ export const WiredDialog = ({
   }, [elevation, open, zIndex]);
 
   const register = useCustomElement(customValues);
-  return <wired-dialog ref={register}>{children}</wired-dialog>;
+  return (
+    <wired-dialog class={className} style={style} ref={register}>
+      {children}
+    </wired-dialog>
+  );
 };

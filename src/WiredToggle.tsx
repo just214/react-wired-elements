@@ -36,6 +36,8 @@ export const WiredToggle = ({
   onChange,
   activeColor = 'rgb(63, 81, 181)',
   inactiveColor = 'gray',
+  className,
+  style,
 }: WiredToggleProps) => {
   const customValues = useMemo(() => {
     return {
@@ -50,5 +52,7 @@ export const WiredToggle = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-toggle ref={register}></wired-toggle>;
+  return (
+    <wired-toggle class={className} style={style} ref={register}></wired-toggle>
+  );
 };

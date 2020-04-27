@@ -26,6 +26,8 @@ export interface WiredButtonProps extends BaseProps {
 }
 
 export const WiredButton = ({
+  className,
+  style,
   onClick,
   elevation = 1,
   disabled = false,
@@ -34,10 +36,18 @@ export const WiredButton = ({
   const customValues = useMemo(() => {
     return {
       attributes: { disabled, elevation },
-      methods: { click: onClick },
     };
-  }, [elevation, disabled, onClick]);
+  }, [elevation, disabled]);
 
   const register = useCustomElement(customValues);
-  return <wired-button ref={register}>{children}</wired-button>;
+  return (
+    <wired-button
+      onClick={onClick}
+      class={className}
+      style={style}
+      ref={register}
+    >
+      {children}
+    </wired-button>
+  );
 };

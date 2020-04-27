@@ -30,6 +30,8 @@ export const WiredCheckBox = ({
   color = 'currentColor',
   disabled = false,
   onChange,
+  className,
+  style,
 }: WiredCheckBoxProps) => {
   const customValues = useMemo(() => {
     return {
@@ -41,5 +43,5 @@ export const WiredCheckBox = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-checkbox ref={register} />;
+  return <wired-checkbox class={className} style={style} ref={register} />;
 };

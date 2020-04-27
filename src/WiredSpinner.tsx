@@ -25,6 +25,8 @@ export const WiredSpinner = ({
   spinning = false,
   duration = 1500,
   color = 'black',
+  className,
+  style,
 }: WiredSpinnerProps) => {
   const customValues = useMemo(() => {
     return {
@@ -35,5 +37,11 @@ export const WiredSpinner = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-spinner ref={register}></wired-spinner>;
+  return (
+    <wired-spinner
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-spinner>
+  );
 };

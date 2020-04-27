@@ -3,9 +3,16 @@ import * as ReactDOM from 'react-dom';
 import { WiredSpinner } from '../src/WiredSpinner';
 
 describe('WiredSpinner', () => {
-  it('renders without crashing', () => {
+  it('renders with base props', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<WiredSpinner />, div);
+    ReactDOM.render(
+      <WiredSpinner className="clz" style={{ color: 'red' }} />,
+      div
+    );
+    // noinspection CheckTagEmptyBody
+    expect(div.innerHTML).toMatch(
+      '<wired-spinner class="clz" style="color: red;"></wired-spinner>'
+    );
     ReactDOM.unmountComponentAtNode(div);
   });
 });

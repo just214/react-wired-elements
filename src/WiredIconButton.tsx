@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BaseProps } from './types';
 import { useCustomElement } from './utils/useCustomElement';
 import { Icon } from './utils/icons';
+
 const { useMemo } = React;
 
 export interface WiredIconButtonProps extends BaseProps {
@@ -30,10 +31,12 @@ export interface WiredIconButtonProps extends BaseProps {
    * @default favorite
    */
   icon?: Icon;
+
   /**
    * Event fired when button is clicked/submitted
    */
   onClick?(e: MouseEvent): void;
+
   /**
    * The children. Optionally pass in your own icon.
    */
@@ -48,18 +51,24 @@ export const WiredIconButton = ({
   iconSize = 24,
   onClick,
   children,
+  className,
+  style,
 }: WiredIconButtonProps) => {
   const customValues = useMemo(() => {
     return {
       attributes: { disabled },
-      methods: { click: onClick },
       css: { color: lineColor, '--mdc-icon-size': iconSize },
     };
-  }, [disabled, lineColor, iconSize, onClick]);
+  }, [disabled, lineColor, iconSize]);
 
   const register = useCustomElement(customValues);
   return (
-    <wired-icon-button ref={register}>
+    <wired-icon-button
+      onClick={onClick}
+      class={className}
+      style={style}
+      ref={register}
+    >
       <div style={{ height: '24px', width: '24px' }}>
         {children || (
           <span

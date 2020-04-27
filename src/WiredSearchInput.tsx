@@ -39,6 +39,8 @@ export const WiredSearchInput = ({
   onChange,
   onBlur,
   onFocus,
+  className,
+  style,
 }: WiredSearchInputProps) => {
   const customValues = useMemo(() => {
     return {
@@ -48,5 +50,11 @@ export const WiredSearchInput = ({
   }, [placeholder, disabled, value, onChange, onBlur, onFocus]);
 
   const register = useCustomElement(customValues);
-  return <wired-search-input ref={register}></wired-search-input>;
+  return (
+    <wired-search-input
+      class={className}
+      style={style}
+      ref={register}
+    ></wired-search-input>
+  );
 };

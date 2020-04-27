@@ -42,6 +42,8 @@ export const WiredCombo = ({
   onSelect,
   popupBgColor = 'white',
   selectedBgColor = 'gray',
+  className,
+  style,
 }: WiredComboProps) => {
   const customValues = useMemo(() => {
     return {
@@ -55,5 +57,9 @@ export const WiredCombo = ({
   }, [disabled, value, onSelect, popupBgColor, selectedBgColor]);
 
   const register = useCustomElement(customValues);
-  return <wired-combo ref={register}>{children}</wired-combo>;
+  return (
+    <wired-combo class={className} style={style} ref={register}>
+      {children}
+    </wired-combo>
+  );
 };

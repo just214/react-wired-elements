@@ -42,6 +42,8 @@ export const WiredFab = ({
   icon = 'favorite',
   onClick,
   children,
+  className,
+  style,
 }: WiredFabProps) => {
   const customValues = useMemo(() => {
     return {
@@ -53,7 +55,7 @@ export const WiredFab = ({
 
   const register = useCustomElement(customValues);
   return (
-    <wired-fab ref={register}>
+    <wired-fab class={className} style={style} ref={register}>
       <span>
         {children || (
           <span className="material-icons" style={{ color: iconColor }}>

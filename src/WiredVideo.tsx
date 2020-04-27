@@ -43,6 +43,8 @@ export const WiredVideo = ({
   muted = false,
   playsInline = false,
   color = 'black',
+  className,
+  style,
 }: WiredVideoProps) => {
   const customValues = useMemo(() => {
     return {
@@ -59,5 +61,7 @@ export const WiredVideo = ({
 
   const register = useCustomElement(customValues);
 
-  return <wired-video ref={register}></wired-video>;
+  return (
+    <wired-video class={className} style={style} ref={register}></wired-video>
+  );
 };
