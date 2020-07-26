@@ -1,5 +1,5 @@
 // @ts-ignore
-import 'wired-elements/lib/wired-elements-bundled.cjs';
+import 'wired-elements/lib/wired-elements-cjs';
 export * from './WiredButton';
 export * from './WiredCalendar';
 export * from './WiredCard';
