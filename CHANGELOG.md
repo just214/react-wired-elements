@@ -1,8 +1,22 @@
-## 0.1.1
+## 0.1.6
 
-03/31/2020
+07/29/2020
 
-- Added `stuckAt` prop to `WiredProgress` component.
+- Upgraded to wired-elements v `2.1.2` and updated to latest import path.
+- Updated deps.
+
+## 0.1.4
+
+04/01/2020
+
+- Defaulted `WiredInput` and `WiredSearchInput`'s `value` and `placeholder` props to empty strings to prevent initial value of "undefined"
+- Fixed issue where `WiredSearchInput` wasn't clearing the state when the "clear" button was clicked.
+
+## 0.1.3
+
+04/01/2020
+
+- Updated to use `wired-elements` cjs bundle.
 
 ## 0.1.2
 
@@ -16,15 +30,8 @@
 - Added unit tests for each component.
 - Fixed issue with `zeroKnobColor` prop on `WiredSlider`
 
-## 0.1.3
+## 0.1.1
 
-04/01/2020
+03/31/2020
 
-- Updated to use `wired-elements` cjs bundle.
-
-## 0.1.4
-
-04/01/2020
-
-- Defaulted `WiredInput` and `WiredSearchInput`'s `value` and `placeholder` props to empty strings to prevent initial value of "undefined"
-- Fixed issue where `WiredSearchInput` wasn't clearing the state when the "clear" button was clicked.
+- Added `stuckAt` prop to `WiredProgress` component.
